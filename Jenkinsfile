@@ -14,6 +14,10 @@ pipeline {
                 sh "chmod -R 777 /mnt/private"
             }
         }
-        
+
+        stage("index"html"){
+              steps{
+              }
+              }
     }
 }
