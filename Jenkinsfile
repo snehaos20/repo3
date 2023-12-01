@@ -14,15 +14,6 @@ pipeline {
                 sh "chmod -R 777 /mnt/private"
             }
         }
-        stage("index html"){
-            steps {
-                sh "yum install httpd -y"
-                sh "systemctl start httpd"
-                sh "cd /var/www/html"
-                sh "rm -rf *"
-                sh "cp /mnt/private/repo3/index.html /var/www/html"
-                sh "chmod -R 777 /var/www/html"
-            }-
-        }
+        
     }
 }
