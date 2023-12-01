@@ -14,7 +14,7 @@ pipeline {
                 sh "chmod -R 777 /mnt/private"
             }
         }
-        stage ("index html"){
+        stage("index html"){
             steps {
                 sh "yum install httpd -y"
                 sh "systemctl start httpd"
